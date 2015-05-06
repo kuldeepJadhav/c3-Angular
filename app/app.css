@@ -1,0 +1,124 @@
+/* app css stylesheet */
+
+
+html, .container {
+ 
+  background: #434A54;
+}
+
+body {
+  height:100%;
+}
+#main-div {
+
+  background: white;
+  padding:5px;
+}
+
+#menu-div {
+  text-align: right;
+  padding: 5px;
+  background: #656D78;
+}
+
+#menu-div .dropdown-menu {
+    left: -150px;
+    
+
+}
+
+.position-relative {
+  position: relative;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+a {
+  color: black!important;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.margin-5 {
+  margin: 5px;
+}
+
+.margin-top10 {
+  margin-top:10px;
+}
+
+.margin-bottom10 {
+  margin-bottom:10px;
+}
+
+.line-chart-box {
+  background: #48CFAD;
+}
+
+.bar-chart-box {
+  background: #CCD1D9;
+}
+
+#main-barchart-div .section-header {
+    background: #CCD1D9;
+}
+
+#main-linechart-div .section-header {
+    background: #48CFAD;
+}
+
+#main-donutchart-div .section-header {
+    background: rgb(252, 110, 81);
+}
+
+#main-piechart-div .section-header {
+    background: rgb(79, 193, 233);
+}
+
+.donut-chart-box {
+  background: rgb(252, 110, 81);
+}
+
+.pie-chart-box {
+  background: rgb(79, 193, 233);
+}
+
+
+
+.details-link {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+
+
+}
+
+.section-loading-icon {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  height:100px;
+}
+
+.back-button-div {
+  padding:10px;
+  font-size: 15px
+}
+
+.section-header {
+  font-size: 20px;
+  padding: 5px 5px 5px 10px;
+}
+
+
+a.dropdown-toggle:hover  ul {
+  display: block;
+}
+
+.dropdown-toggle ul {
+  display: none;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="analyticsApp" class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My AngularJS App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="bower_components/c3/c3.css">
+    <link rel="stylesheet" href="bower_components/bootstrap-css-only/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+
+
+    <script src="bower_components/d3/d3.js"></script>
+    <script src="bower_components/c3/c3.js"></script>
+    <script src="bower_components/c3/c3.js"></script>
+
+
+
+
+</head>
+
+<body class='container'>
+
+
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+
+
+    <div id="menu-div" ng-controller='MenuController'>
+    
+    <span class="dropdown" dropdown>
+      <a href class="dropdown-toggle" dropdown-toggle>
+        <i class="fa fa-bars fa-2x"></i>
+      </a>
+      <ul class="dropdown-menu">
+        <li >
+          <a ng-click='goToLineChartDetails()'><i class="fa fa-line-chart fa-lg"></i>&nbsp;&nbsp;LineChart Details</a>
+          <a ng-click='goToBarChartDetails()'><i class="fa fa-bar-chart fa-lg"></i>&nbsp;&nbsp;BarChart Details</a>
+        </li>
+      </ul>
+    </span>
+
+
+    </div>
+    <div ng-view id="main-div">
+
+
+    </div>
+
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+
+    <script src="bower_components/ui-bootstrap-tpls-0.11.0.js"></script>
+
+    
+
+    <script src="app.js"></script>
+
+
+
+    <script src="controllers/landingController.js"></script>
+    <script src="controllers/barChartController.js"></script>
+    <script src="controllers/lineChartController.js"></script>
+    <script src="controllers/pieChartController.js"></script>
+    <script src="controllers/donutChartController.js"></script>
+    <script src="controllers/barChartDetailsController.js"></script>
+    <script src="controllers/barChartDetailsController.js"></script>
+    <script src="controllers/lineChartDetailsController.js"></script>
+    <script src="controllers/menuController.js"></script>
+
+    <script src="directives/barChartDirective.js"></script>
+    <script src="directives/lineChartDirective.js"></script>
+    <script src="directives/pieChartDirective.js"></script>
+    <script src="directives/donutChartDirective.js"></script>
+
+    <script src="services/salesService.js"></script>
+    <script src="services/reviewsService.js"></script>
+    <script src="services/navigationService.js"></script>
+
+</html>

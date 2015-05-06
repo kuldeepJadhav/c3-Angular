@@ -1,0 +1,34 @@
+<div ng-controller='LineChartDetailsController'>
+	<div class='row'>
+
+        <div class='col-md-12 col-xs-12'> 
+        	<div ng-click='goToLandingPage()' class='back-button-div'><a><i class="fa fa-reply"></i><span>&nbsp;Go Back</span></a></div>
+            <line-chart title = 'Sales Data' data='lineChartData' field='{{xAxisFieldNameForLineChart}}' value='{{xAxisValueFieldNameForLineChart}}'> </line-chart>
+        </div>
+    </div>
+
+     <div class='row'>
+        <div class='col-md-12 col-xs-12'>
+            <div class="panel panel-default">
+                <div class="panel-heading">Panel heading</div>
+               <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Month</th>
+                            <th>Sales</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat='salesDataObj in lineChartData'>
+                            <td>{{$index}}</td>
+                            <td>{{salesDataObj.monthName}}</td>
+                            <td>{{salesDataObj.sales}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

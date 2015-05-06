@@ -1,0 +1,34 @@
+<div ng-controller='BarChartDetailsController'>
+	<div class='row'>
+
+        <div class='col-md-12 col-xs-12'> 
+        	<div ng-click='goToLandingPage()' class='back-button-div'><a><i class="fa fa-reply"></i><span>&nbsp;Go Back</span></a></div>
+            <bar-chart title = 'Sales Data' data='barData' field='{{xAxisFieldName}}' value='{{xAxisValueFieldName}}'> </bar-chart>
+        </div>
+    </div>
+
+     <div class='row'>
+        <div class='col-md-12 col-xs-12'>
+            <div class="panel panel-default">
+                <div class="panel-heading">Panel heading</div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Month</th>
+                            <th>Sales</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat='salesDataObj in barData'>
+                            <td>{{$index}}</td>
+                            <td>{{salesDataObj.monthName}}</td>
+                            <td>{{salesDataObj.sales}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

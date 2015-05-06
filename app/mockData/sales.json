@@ -1,0 +1,23 @@
+
+{
+    "salesData":
+[{
+        "monthName": "Jan",
+        "sales": "2000"
+    }, {
+        "monthName": "Feb",
+        "sales": "5000"
+    }, {
+        "monthName": "April",
+        "sales": "10000"
+    }, {
+        "monthName": "May",
+        "sales": "1000"
+    }, {
+        "monthName": "June",
+        "sales": "500"
+    }, {
+        "monthName": "July",
+        "sales": "4000"
+    }]
+}

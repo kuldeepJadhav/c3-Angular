@@ -1,0 +1,55 @@
+<div ng-controller='LandingController'>
+    <div class='row'>
+        <div class='col-md-6 col-xs-12'>
+
+            <div class='position-relative'>
+                
+                <line-chart title = 'Sales Data' data='lineChartData' field='{{xAxisFieldNameForLineChart}}' value='{{xAxisValueFieldNameForLineChart}}'> </line-chart>
+                <div class= 'details-link' ng-click='goToLineChartDetails()'>
+                    <a><span>Details&nbsp;</span><i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class='position-relative'>
+                <bar-chart title = 'Sales Data' data='barData' field='{{xAxisFieldName}}' value='{{xAxisValueFieldName}}'> </bar-chart>
+                <div class= 'details-link'  ng-click='goToBarChartDetails()'>
+                    <a><span>Details&nbsp;</span><i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class='col-md-6 col-xs-12'>
+            <pie-chart title = 'Reviews Data' data='pieChartData'> </pie-chart>
+            <donut-chart title = 'Reviews Data'  data='donutChartData'> </donut-chart>
+        </div>
+
+    </div>
+    <div class='row'>
+        <div class='col-md-6 col-xs-12'>
+            <div class="panel panel-default">
+                <div class="panel-heading">Panel heading</div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Month</th>
+                            <th>Sales</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat='salesDataObj in tableData'>
+                            <td>{{$index}}</td>
+                            <td>{{salesDataObj.monthName}}</td>
+                            <td>{{salesDataObj.sales}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="margin-5">
+                    <pagination total-items="totalItems" max-size="maxSize" ng-model="currentPage" ng-change="pageChanged()"></pagination>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+</div>
