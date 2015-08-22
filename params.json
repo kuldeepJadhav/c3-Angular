@@ -1,0 +1,1 @@
+{"name":"C3-angular","tagline":"Using C3 graph library with angularjs","body":"# Steps\r\nnpm install\r\n\r\n# To run the server\r\n\r\nnpm start\r\n\r\n# To access\r\n\r\nlocalhost:8000/app\r\n","google":"","note":"Don't delete this file! It's used internally to help with page regeneration."}
